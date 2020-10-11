@@ -19,20 +19,15 @@
 - views.py: function that renders html
 - urls.py: you can create urls.py under an application.like /users/profile, /users/delete, /users/register etc.
 
-## Our development environment
+## Team development environment
+
+- Python 3.8.6 64-bit
+- Django 3.1.2
 
 ### Gyeonghun Park
 
 - System: Mac OS Catalina 10.15.7 (19H2)
-- Python 3.8.6 64-bit
-- Django 3.1.2
 
 ### Soonyeong Kweon
 
 - System: Windows 10 Education (Build 1909)
-- Python 3.8.6 64-bit
-- Django 3.1.2
-
-## Test Branch
-
-### ../test
