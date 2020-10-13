@@ -31,3 +31,9 @@
 ### Soonyeong Kweon
 
 - System: Windows 10 Education (Build 1909)
+- Python 3.8.6 64-bit
+- Django 3.1.2
+
+## Test Branch
+
+### ...testing_Fork_and_PullRequest...10-13-2020
