@@ -13,5 +13,5 @@ class Hull(core_models.TimeStampedModel):
     country = CountryField()
     description = models.TextField()
     price = models.IntegerField()
-    delivery_date = models.TimeField()
+    delivery_date = models.DateField()
     owner = models.ManyToManyField(owner_models.Owner)
