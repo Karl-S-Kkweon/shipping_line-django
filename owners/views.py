@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework.viewsets import ModelViewSet
+from .models import Owner
+from .serializers import OwnerSerializer
 
-# Create your views here.
+
+class OwnersViewSet(ModelViewSet):
+    queryset = Owner.objects.all()
+    serializer_class = OwnerSerializer

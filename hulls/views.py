@@ -1,9 +1,9 @@
-from rest_framework.generics import ListAPIView
+from rest_framework.viewsets import ModelViewSet
 from .models import Hull
 from .serializers import HullSerializer
 
 
-class ListHullsView(ListAPIView):
+class ListHullsView(ModelViewSet):
 
     queryset = Hull.objects.all()
     serializer_class = HullSerializer
