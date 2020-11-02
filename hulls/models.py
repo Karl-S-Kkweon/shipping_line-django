@@ -14,4 +14,10 @@ class Hull(core_models.TimeStampedModel):
     description = models.TextField()
     price = models.IntegerField()
     delivery_date = models.DateField()
-    owner = models.ManyToManyField(owner_models.Owner)
+    owners = models.ManyToManyField(owner_models.Owner)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        ordering = ["-pk"]
