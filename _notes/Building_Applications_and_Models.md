@@ -6,8 +6,10 @@
  django-admin startapp [appname]
 ```
 
+- after creating the app, you need to add it to PROJECT_APPS on [setting.py](./config/settings.py) so that Django can use it.
 - since app contains multiple functions, appname should be in plural form
 - names of .py files in application folder is not optional. You can't change names
+
 - Django makes migration by itself, so we don't have to write sql
 
 ```shell
@@ -25,7 +27,7 @@ python manage.py migrate
 
 Models have fields. For the fields you put in models.py, will make be turned into database table. Django ORM translates python code into SQL Instructions to database.
 
-- **[Refer to models.py fields document on Django](https://docs.djangoproject.com/en/2.2/ref/models/fields/).**
+- **[Refer to models.py fields document on Django](https://docs.djangoproject.com/en/3.1/ref/models/fields/).**
 - textfield: fields text field without limit on webpage
 - charfield: fields text field with limit of single line webpage
 - datefield: fields calendar selection on webpage
@@ -33,6 +35,6 @@ Models have fields. For the fields you put in models.py, will make be turned int
 
 ### admin.py: Admin Panel
 
-- **[Refer to admin.py fields document document on Django](https://docs.djangoproject.com/en/2.2/ref/contrib/admin/)**
+- **[Refer to admin.py fields document document on Django](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/)**
 - admin.py regards about admin panel of the website.
 - you can create filter(like excel) for fields in table: such as currency or superhost
