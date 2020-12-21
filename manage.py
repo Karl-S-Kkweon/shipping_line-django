@@ -3,6 +3,10 @@
 import os
 import sys
 
+# sys.path.append(
+#     "D:\\OneDrive - fanshaweonline.ca\\Documents\\VS Code Workplace\\Private_Projects\\Shipbuilding_AfterSales\\shipping_line-django"
+# )
+
 
 def main():
     """Run administrative tasks."""

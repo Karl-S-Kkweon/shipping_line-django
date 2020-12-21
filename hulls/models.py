@@ -3,7 +3,6 @@ from django_countries.fields import CountryField
 from core import models as core_models
 from owners import models as owner_models
 
-
 class Hull(core_models.TimeStampedModel):
 
     """ Hull Model Definition """
@@ -21,3 +20,4 @@ class Hull(core_models.TimeStampedModel):
 
     class Meta:
         ordering = ["-pk"]
+
