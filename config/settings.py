@@ -48,6 +48,7 @@ PROJECT_APPS = [
     "core.apps.CoreConfig",
     "owners.apps.OwnersConfig",
     "hulls.apps.HullsConfig",
+    "hull_report.apps.HullReportConfig",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS

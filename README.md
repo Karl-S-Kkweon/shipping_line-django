@@ -34,6 +34,8 @@
 - Python 3.8.6 64-bit
 - Django 3.1.2
 
-## Test Branch
-
 ### ...testing_Fork_and_PullRequest...10-13-2020
+
+### ...forked again...add 'upstream' remote for GH's repository...12-05-2020
+
+### ...updated Hull_Report model...12-20-2020
