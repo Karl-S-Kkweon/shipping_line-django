@@ -9,6 +9,11 @@ class Owner(core_models.TimeStampedModel):
     name = models.CharField(max_length=120, default="")
     is_supervisor = models.BooleanField(default=False)
 
+    def count_hulls(self):
+        return self.hulls.count()
+
+    count_hulls.short_description = "Number of Hulls"
+
     def __str__(self):
         return self.name
 
