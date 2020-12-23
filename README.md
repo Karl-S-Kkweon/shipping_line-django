@@ -39,3 +39,5 @@
 ### ...forked again...add 'upstream' remote for GH's repository...12-05-2020
 
 ### ...updated Hull_Report model...12-20-2020
+
+### ...add Hull_Report url...12-23-2020
