@@ -3,7 +3,7 @@ from . import views
 
 app_name = "hull_report"
 router = DefaultRouter()
-router.register("", views.ListHull_ReportView)
+router.register("", views.ListHullReportView)
 
 
 urlpatterns = router.urls
