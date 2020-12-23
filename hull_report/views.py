@@ -3,7 +3,7 @@ from .models import Hull_Report
 from .serializers import HullReportSerializer
 
 
-class ListHullReportsView(ModelViewSet):
+class ListHullReportView(ModelViewSet):
 
     queryset = Hull_Report.objects.all()
     serializer_class = HullReportSerializer

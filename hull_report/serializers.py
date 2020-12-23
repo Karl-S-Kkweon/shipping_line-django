@@ -1,12 +1,12 @@
 from rest_framework import serializers
-from .models import HullReport
+from .models import Hull_Report
 from hulls.serializers import HullSerializer
 
 
 class HullReportSerializer(serializers.ModelSerializer):
 
-    hulls = HullSerializer(one=True)
+    hulls = HullSerializer() #many=True
 
     class Meta:
-        model = HullReport
+        model = Hull_Report
         exclude = ("created", "updated")
