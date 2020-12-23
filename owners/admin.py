@@ -7,6 +7,6 @@ class OwnerAdmin(admin.ModelAdmin):
 
     """ Custom Owner Admin """
 
-    list_display = ("name", "is_supervisor")
+    list_display = ("name", "is_supervisor", "count_hulls")
 
     list_filter = ("is_supervisor",)

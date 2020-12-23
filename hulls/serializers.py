@@ -5,7 +5,7 @@ from owners.serializers import OwnerSerializer
 
 class HullSerializer(serializers.ModelSerializer):
 
-    owners = OwnerSerializer(many=True)
+    owner = OwnerSerializer()
 
     class Meta:
         model = Hull
