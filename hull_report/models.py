@@ -1,5 +1,4 @@
 from django.db import models
-from django_countries.fields import CountryField
 from core import models as core_models
 from hulls import models as hull_models
 
@@ -22,7 +21,7 @@ class Hull_Report(core_models.TimeStampedModel):
     # yard_files =
 
     def __str__(self):
-        return self.subject
+        return str(self.report_number)
 
     class Meta:
         ordering = ["-pk"]

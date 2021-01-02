@@ -14,6 +14,7 @@ class HullAdmin(admin.ModelAdmin):
         "description",
         "price",
         "delivery_date",
+        "owner"
     )
 
     list_filter = ("country",)

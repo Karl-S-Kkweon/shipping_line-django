@@ -20,5 +20,10 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/v1/hulls/", include("hulls.urls")),
     path("api/v1/owners/", include("owners.urls")),
-    path("api/v1/hull_reports/", include("hull_report.urls"))
+    path("api/v1/hull_reports/", include("hull_report.urls")),
+    path("api/v1/warranty_details/", include("Warranty_Details.urls")),
+    path("api/v1/comm_logs/", include("communication_logs.urls")),
+    path("api/v1/partners/", include("manufacturers.urls")),
+    path("api/v1/departments/", include("yard_departments.urls")),
+    path("api/v1/relevant_groups/", include("relevant_groups.urls"))    
 ]

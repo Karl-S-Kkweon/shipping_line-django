@@ -49,6 +49,11 @@ PROJECT_APPS = [
     "owners.apps.OwnersConfig",
     "hulls.apps.HullsConfig",
     "hull_report.apps.HullReportConfig",
+    "Warranty_Details.apps.WarrantyDetailsConfig",
+    "manufacturers.apps.ManufacturersConfig",
+    "communication_logs.apps.CommunicationLogsConfig",
+    "yard_departments.apps.YardDepartmentsConfig",
+    "relevant_groups.apps.RelevantGroupsConfig"
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS

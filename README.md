@@ -41,3 +41,19 @@
 ### ...updated Hull_Report model...12-20-2020
 
 ### ...add Hull_Report url...12-23-2020
+
+### ...add Warranty_Details...12-30-2020
+
+### ...fixed DB data...12-30-2020
+###     --- deleted useless table, 'hulls_owners'
+###     --- add 'owner_id' column to 'hulls' table, then filled 'owner_id' column with sample data
+
+### ...update Warranty_Details...12-31-2020
+
+### ...add Tables and sample data...01-01-2021
+###     --- add 3 tables: manufacturers, yard_departments, gitand communication_logs
+###     --- add sample data for manufacturers and yard departments
+
+### ...add a Table and a simple DB diagram...01-02-2021
+###     --- add 1 table: relevant_groups
+###     --- add a simplified DB diagram to show relatinoships among tables; yard_depts, manufacturers, and relevant groups.
