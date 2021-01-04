@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block page_name %}
+{{owner.name}}
+{% endblock page_name %}
+
+{% block content %}
+
+<div>
+    <h1>{{owner.name}}</h1>
+    <h3>This owner is {% if not is_supervisor  %} not {% endif %} supervisor<h3>
+</div>
+
+{% endblock %}

@@ -53,7 +53,7 @@ PROJECT_APPS = [
     "manufacturers.apps.ManufacturersConfig",
     "communication_logs.apps.CommunicationLogsConfig",
     "yard_departments.apps.YardDepartmentsConfig",
-    "relevant_groups.apps.RelevantGroupsConfig"
+    "relevant_groups.apps.RelevantGroupsConfig",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
@@ -73,7 +73,7 @@ ROOT_URLCONF = "config.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
