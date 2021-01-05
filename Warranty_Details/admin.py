@@ -1,6 +1,7 @@
 from django.contrib import admin
 from . import models
 
+
 # Register your models here.
 @admin.register(models.Warranty_Details)
 class WarrantyDetailsAdmin(admin.ModelAdmin):
@@ -9,7 +10,7 @@ class WarrantyDetailsAdmin(admin.ModelAdmin):
 
     list_display = (
         "report_number",
-        #"responsibility",
+        # "responsibility",
         "status",
         "section",
         "importance",

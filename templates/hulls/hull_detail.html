@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block page_name %}
+{{hull.name}}
+{% endblock page_name %}
+
+{% block content %}
+
+<div>
+    <h1>{{hull.name}}</h1>
+    <ul>
+        <li>{{hull.no}}</li>
+        <li>{{hull.country}}</li>
+        <li>{{hull.description}}</li>
+        <li>{{hull.delivery_date}}</li>
+        <li>{{hull.owner}}</li>
+    </ul>
+</div>
+
+{% endblock %}

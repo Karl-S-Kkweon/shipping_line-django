@@ -16,7 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
+    path("", include("core.urls")),
+    path("hulls/", include("hulls.urls_tmplt", namespace="hulls_tmplt")),
+    path("owners/", include("owners.urls_tmplt", namespace="owners_tmplt")),
     path("admin/", admin.site.urls),
     path("api/v1/hulls/", include("hulls.urls")),
     path("api/v1/owners/", include("owners.urls")),
@@ -25,5 +29,5 @@ urlpatterns = [
     path("api/v1/comm_logs/", include("communication_logs.urls")),
     path("api/v1/partners/", include("manufacturers.urls")),
     path("api/v1/departments/", include("yard_departments.urls")),
-    path("api/v1/relevant_groups/", include("relevant_groups.urls"))    
+    path("api/v1/relevant_groups/", include("relevant_groups.urls")),
 ]
