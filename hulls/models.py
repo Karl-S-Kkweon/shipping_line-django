@@ -16,6 +16,9 @@ class Hull(core_models.TimeStampedModel):
         "owners.Owner", on_delete=models.CASCADE, related_name="hulls"
     )
 
+    def Hull_List(models):
+        return models.hulls
+
     def __str__(self):
         return self.name
 
